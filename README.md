@@ -1,4 +1,4 @@
-# CHIMMA
+# CHIM-MA
 A program created to detect chimeric sequences
 
 ### Description
@@ -13,10 +13,10 @@ and if to generate chimeric sequences and how many (procent of the created seque
 
 - *ComparingFiles.py* is a program that will take one input file with sequences and one input reference file with sequences.
 The two files will then be compared for same ID sequences, and return how many True/False positives and negatives the input file
-contains compared with the reference file. 
+contains with the reference file as the positives. 
 
 
-
+### Installation
 
 Packages required for the python scripts:
 ``` python
