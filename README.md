@@ -2,7 +2,9 @@
 A program created to detect chimeric sequences
 
 ### Description
-This program takes a fasta file as input and look through the sequences to detect chimera sequences.
+
+-*CHIMMA.py* This program will take a cleaned fasta file as input, looking for chimeric sequences and outputs one file of detected chimeric sequences
+and one file of no chimeric sequences.
 
 In the "src" folder two additional programs are found, used for validation of CHIMMA.py.
 
