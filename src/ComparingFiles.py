@@ -23,27 +23,28 @@ parser.add_argument(
 	required = True
 	)
 args = parser.parse_args()
-
+################################################################################
 
 import sys
 Inputfile = args.infile
 referencefile = args.referencefile
 
+totalcount = 0
 refIds = set()
 for line in Inputfile:
     if line.startswith('>'):
             refIds.add(line)
-
+	    totalcount += 1
 
 
 TruePositive = 0
-FalsePositive = 0
+FalseNegative = 0
 for line in referencefile:
     if line.startswith('>'):
         if line in refIds:
             TruePositive += 1
-        else:
-            FalsePositive += 1
+	else:
+	    FalseNegative += 1
+FalsePositive = totalcount - TruePositive
 
-
-print('True positives: {}\n False positives: {}'.format(TruePositive,FalsePositive))
+print('True positives: {}\nFalse positives: {}\nFalse negatives: {}\nTotal positives reported: {}'.format(TruePositive,FalsePositive,FalseNegative,totalcount))

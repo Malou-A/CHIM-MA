@@ -1,6 +1,5 @@
 #!/usr/bin/python 3
 import argparse
-import platform
 import sys
 import statistics as stat
 ############################## ARGPARSE PART ##################################
