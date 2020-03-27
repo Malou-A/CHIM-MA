@@ -1,5 +1,5 @@
 # CHIM-MA
-A program created to detect chimeric sequences
+This program was created during a project week for the course BINP29 (Sequence analysis II) at Lund University. It's aim is to detect chimeric sequences
 
 ### Description
 
